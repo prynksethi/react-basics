@@ -1,0 +1,52 @@
+.mdl-content-center-any{
+  text-align: center;
+}
+.mdl-content-center-any div{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+.mdl-margin-bottom-10-per-phone
+{
+  margin-bottom:10%;
+}
+.mdl-margin-bottom-6-per-tablet {
+  margin-bottom: 10%;
+}
+
+
+.rating {
+      overflow: hidden;
+      display: inline-block;
+  }
+  .rating-input {
+      float: right;
+      width: 16px;
+      height: 16px;
+      padding: 0;
+      margin: 0 0 0 -16px;
+      opacity: 0;
+  }
+  .rating-star {
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url('star.png') 0 -16px;
+  }
+  .rating:hover .rating-star:hover,
+  .rating:hover .rating-star:hover ~ .rating-star,
+  .rating-input:checked ~ .rating-star {
+      background-position: 0 0;
+  }
+  .rating-star,
+  .rating:hover .rating-star {
+      position: relative;
+      float: right;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url('star.png') 0 -16px;
+  }
