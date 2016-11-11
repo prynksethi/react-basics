@@ -34,6 +34,10 @@ gulp.task('scripts', function () {
  var bundler = browserify('./src/app/app.js').transform(babelify)
 
  return bundler.bundle()
+  .on('error', function (err) {
+          console.log(err.toString());
+          this.emit("end");
+      })
    .pipe(source('app.js'))
    .pipe(buffer())
    .pipe(rename('app.min.js'))

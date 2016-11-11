@@ -1,7 +1,7 @@
 import React,{PropTypes,Component} from 'react'
 import {Link} from 'react-router'
 import {FirstPage , Login} from './index'
-import {EmpFeedbackRequest,PendingFeedback,FeedbackRequest} from '../components/index'
+import {EmpFeedbackRequest,PendingFeedback,FeedbackRequest, DoctorFeedback} from '../components/index'
 
 export default class Home extends Component {
    constructor(props) {
@@ -20,12 +20,13 @@ export default class Home extends Component {
         <div className="mdl-layout__header-row">
           <span className="mdl-layout-title">Peer to Peer </span>
         </div>
-     
+
         <div className="mdl-layout__tab-bar mdl-js-ripple-effect">
           <a href="#scroll-tab-1" className="mdl-layout__tab is-active">Request Feedback </a>
           <a href="#scroll-tab-2" className="mdl-layout__tab"> Pending Feedback </a>
           <a href="#scroll-tab-3" className="mdl-layout__tab"> Employee Feedback Requests </a>
           <a href="#scroll-tab-4" className="mdl-layout__tab"> Received Employee Feedback </a>
+          <a href="#scroll-tab-5" className="mdl-layout__tab"> Doctor Feedback </a>
         </div>
     </header>
   <div className="mdl-layout__drawer">
@@ -43,6 +44,9 @@ export default class Home extends Component {
       </section>
       <section className="mdl-layout__tab-panel" id="scroll-tab-4">
         <div className="page-content">Received Employee Feedback </div>
+      </section>
+      <section className="mdl-layout__tab-panel" id="scroll-tab-5">
+        <div className="page-content"> < DoctorFeedback /> </div>
       </section>
   </main>
 </div>

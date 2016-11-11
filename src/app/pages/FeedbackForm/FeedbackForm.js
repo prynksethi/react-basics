@@ -27,13 +27,9 @@ export default class FeedbackForm  extends Component {
                       {
                             return (
 
-
-                        <div className="mdl-cell
-               mdl-cell--4-col-desktop
-               mdl-cell--4-col-tablet
-               mdl-cell--3-col-phone
-               mdl-content-center-any">
-                                 {item}
+                           <tr>
+                               <td>{item}</td>
+                               <td>
                                 <span className="rating">
                                     <input type="radio" className="rating-input"
                                         id="rating-input-1-5" name="rating-input-1" />
@@ -51,7 +47,8 @@ export default class FeedbackForm  extends Component {
                                         id="rating-input-1-1" name="rating-input-1" />
                                     <label for="rating-input-1-1" className="rating-star"></label>
                                    </span>
-                                </div  >
+                                   </td>
+                               </tr>    
                                  );
                       });
     
@@ -79,8 +76,34 @@ export default class FeedbackForm  extends Component {
   </div>
   <main className="mdl-layout__content">
     <div className="page-content"> 
-   
-     {loopData}
+     
+
+     <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Question </th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+  {loopData}
+  </tbody>
+</table>
+<div className="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="sample1" />
+    <label class="mdl-textfield__label" for="sample1">Text...</label>
+  </div>
+
+<div className="mdl-cell
+             mdl-cell--4-col-desktop
+             mdl-cell--4-col-tablet
+             mdl-cell--3-col-phone
+             mdl-margin-top-10-px-any
+             mdl-content-center-any">
+             <Link className="mdl-button mdl-full-width mdl-js-button mdl-button--raised mdl-button--accent"  to ={''}>
+             Submit
+             </Link>
+          </div>
 
      </div>
   </main>

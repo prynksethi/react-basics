@@ -36,7 +36,7 @@ return (
                mdl-cell--4-col-desktop
                mdl-cell--4-col-tablet
                mdl-cell--3-col-phone
-               mdl-content-center-any">
+               ">
                <div className="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                       <input className="mdl-textfield__input" type="text" id="emp1" />
                       <label className="mdl-textfield__label" for="emp1"> Emp name </label>
@@ -45,17 +45,17 @@ return (
             <div className="mdl-cell
               mdl-cell--4-col-desktop
               mdl-cell--4-col-tablet
-              mdl-cell--3-col-phone
-              mdl-content-center-any">
+              mdl-cell--2-col-phone
+             ">
               <div className="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                        <input className="mdl-textfield__input" type="text" id="emp1" />
-                      <label className="mdl-textfield__label" for="emp1"> Emp name </label>
+                      <label className="mdl-textfield__label" for="emp1"> Emp2 Name </label>
              </div>
            </div>
            <div className="mdl-cell
              mdl-cell--4-col-desktop
              mdl-cell--4-col-tablet
-             mdl-cell--3-col-phone
+             mdl-cell--2-col-phone
              mdl-margin-top-10-px-any
              mdl-content-center-any">
              <Link className="mdl-button mdl-full-width mdl-js-button mdl-button--raised mdl-button--accent" to={'/home/first'}>
